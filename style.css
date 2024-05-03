@@ -1,0 +1,185 @@
+html {
+    margin: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    height: 300rem;
+    cursor: url('assets/portfav.png'), auto;
+    /*background-color: #2445b1;*/
+    /* color:#ff6b22;*/
+    color: #2b55de;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding-top: 9rem;
+    padding-left:3rem;
+    overflow-x:hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    position: fixed;
+    width: 100%; /* Make sure nav spans the entire width */
+}
+
+.about {
+    grid-column: 1;
+}
+
+.about button {
+    font-size: 5rem;
+    padding: 0.5rem 1rem; 
+    border: none; /* Remove border from the button */
+    background-color: transparent; /* Ensure button is transparent */
+}
+
+.about button:hover{
+    background-color: #e5ff00; /* Highlight color on hover */
+}
+
+#aboutBox {
+    width: 50rem;
+    background-color: white;
+}
+
+.contact {
+    grid-column: 2;
+    padding-right:4rem;
+    text-align: right;
+}
+
+.contact button {
+    font-size: 5rem;
+    padding: 0.5rem 1rem;
+    border: none; /* Remove border from the button */
+    background-color: transparent; /* Ensure button is transparent */
+}
+
+.contact button:hover{
+    background-color: #e5ff00; /* Highlight color on hover */
+}
+
+#contactBox {
+    width: 65rem;
+    text-align: right;
+    background-color: white;
+}
+
+
+.instagram {
+    color: #2b55de; /* Set the color for normal state */
+    text-decoration: none; /* Remove underline */
+}
+
+.instagram:visited {
+    color: #2b55de; /* Set the color for visited state */
+}
+
+.instagram:hover {
+    color: #2b55de; /* Maintain color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.instagram:active {
+    color: #2b55de; /* Maintain color on click */
+}
+
+.instagram:hover {
+    background-color: #e5ff00; /* Highlight color on hover */
+}
+
+
+
+.grid-info {
+    width: 100vw;
+    border-top: 1px solid #2b55de; /* Add border-bottom to nav */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    cursor: pointer;
+    padding-left:1rem;
+    font-size:large;
+    text-transform: uppercase;
+}
+
+.grid-item img {
+    width: 50%;
+    height: auto;
+}
+
+
+.title{
+    padding-left:1rem;
+}
+
+.grid-item:hover{
+    background-color: #e5ff00;
+}
+
+.date{
+    text-align:right;
+    overflow-x:hidden;
+    padding-right:6rem;
+}
+.content {
+    display: none;
+    padding: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hidden{
+    display:none;
+}
+
+.expanded .content {
+    display: grid;
+}
+
+.content:hidden{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column{
+    display:grid;
+    overflow-x: auto;
+    gap:1rem;
+}
+
+.animate-images {
+    animation: slideImages 10s linear infinite; /* Adjust animation duration */
+    white-space: nowrap;
+}
+
+.image-container {
+    width: 50%;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.image-container img:first-child {
+    display: block;
+}
