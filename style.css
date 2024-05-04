@@ -163,7 +163,6 @@ body {
 
 .column{
     display:grid;
-    overflow-x: auto;
     gap:1rem;
 }
 
@@ -185,4 +184,27 @@ body {
 
 .image-container img:first-child {
     display: block;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about button{
+        font-size: medium;
+    }
+    .contact button{
+        font-size: medium;
+    }
+    #aboutBox {
+        width:100px;
+    }
+    #contactBox {
+        width:100px;
+        text-align: right;
+    }
+    .grid-item img {
+        width: 90%;
+        height: auto;
+    }
+
+
 }
