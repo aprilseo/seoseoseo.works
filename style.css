@@ -8,7 +8,7 @@ body {
     font-size: 1.6rem;
     margin: 0;
     height: 300rem;
-    cursor: url('assets/portfav.png'), auto;
+    cursor: url('fav4.png'), auto;
     /*background-color: #2445b1;*/
     /* color:#ff6b22;*/
     color: #2b55de;
@@ -51,6 +51,7 @@ body {
 
 .about button:hover{
     background-color: #e5ff00; /* Highlight color on hover */
+    cursor: url('fav3.png'), auto;
 }
 
 #aboutBox {
@@ -73,6 +74,7 @@ body {
 
 .contact button:hover{
     background-color: #e5ff00; /* Highlight color on hover */
+    cursor: url('fav3.png'), auto;
 }
 
 #contactBox {
@@ -111,7 +113,6 @@ body {
     border-top: 1px solid #2b55de; /* Add border-bottom to nav */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    cursor: pointer;
     padding-left:1rem;
     font-size:large;
     text-transform: uppercase;
@@ -129,6 +130,7 @@ body {
 
 .grid-item:hover{
     background-color: #e5ff00;
+    cursor: url('fav3.png'), auto;
 }
 
 .date{
@@ -143,6 +145,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    max-width: 100%;
 }
 
 .hidden{
